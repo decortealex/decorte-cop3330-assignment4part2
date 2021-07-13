@@ -1,0 +1,36 @@
+@startuml
+class App {
+lists: ArrayList<todoList>
+}
+
+class todoList {
+#title: String
+#items: ArrayList<todoItem>
+
++int addItem(todoItem)
++int popItem(todoItem)
++int popItem(int)
++todoItem getItem(int)
++void printItem(int)
++void printAllItems()
+}
+
+class todoItem {
+#itemTitle: String
+#desc: String
+#dueDate: Date
+#sdf: SimpleDateFormat
+#isComplete: boolean
+
++String getItemTitle()
++void setItemTitle(String)
++String getDesc()
++void setDesc(String)
++String getDueDate()
++void setDueDate(String)
++boolean isItemComplete()
++void setDone(boolean)
+}
+App o-- "0--*" todoList
+todoList o-- "0..* " todoItem
+@enduml

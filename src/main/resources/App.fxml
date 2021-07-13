@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignments.MainController">
+   <children>
+      <MenuBar fx:id="menuBar">
+        <menus>
+          <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="saveListButton" mnemonicParsing="false" onAction="#onClick" text="Save List" />
+                  <MenuItem fx:id="loadListButton" mnemonicParsing="false" onAction="#onClick" text="Load List" />
+              <MenuItem mnemonicParsing="false" text="Clear List" />
+            </items>
+          </Menu>
+          <Menu fx:id="editMenu" mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem fx:id="addItemButton" mnemonicParsing="false" onAction="#onClick" text="Add New Item" />
+              <MenuItem fx:id="removeItemButton" mnemonicParsing="false" text="Delete Item" />
+            </items>
+          </Menu>
+          <Menu fx:id="viewMenu" mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem fx:id="sortIncompleteButton" mnemonicParsing="false" onAction="#onClick" text="Hide Complete" />
+                  <MenuItem fx:id="sortCompleteButton" mnemonicParsing="false" onAction="#onClick" text="Hide Incomplete" />
+            </items>
+          </Menu>
+            <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <ListView fx:id="listView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+   </children>
+</VBox>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignments.AddNewItemController">
+   <children>
+      <Label fx:id="label1" layoutX="125.0" layoutY="14.0" text="New Item" />
+      <TextField fx:id="titleField" layoutX="21.0" layoutY="42.0" prefHeight="25.0" prefWidth="98.0" text="Item Title" />
+      <TextField fx:id="descField" layoutX="21.0" layoutY="77.0" prefHeight="47.0" prefWidth="258.0" text="Item Description (1-256 char)" />
+      <TextField fx:id="dateField" layoutX="128.0" layoutY="42.0" text="Due Date (YYYY-MM-DD)" />
+      <Button fx:id="doneButton" layoutX="129.0" layoutY="144.0" mnemonicParsing="false" onAction="#handleEvent" text="Done" />
+   </children>
+</AnchorPane>
